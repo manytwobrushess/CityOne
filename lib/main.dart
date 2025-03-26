@@ -1,4 +1,7 @@
 import 'package:cityone/Sign%20in/MainMenu.dart';
+import 'package:cityone/Sign%20in/SignIn.dart';
+import 'package:cityone/Weather%20and%20Alert/Dam.dart';
+import 'package:cityone/Weather%20and%20Alert/InfoFlood.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,7 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
      
-      home: const MainMenu(),
+      home: const SignIn(),
     );
   }
 }

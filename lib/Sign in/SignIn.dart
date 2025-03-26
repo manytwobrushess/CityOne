@@ -1,4 +1,5 @@
 
+import 'package:cityone/Sign%20in/MainMenu.dart';
 import 'package:flutter/material.dart';
 class SignIn extends StatefulWidget {
 	const SignIn({super.key});
@@ -131,7 +132,12 @@ class SignInState extends State<SignIn> {
 																	),
 																),
 																InkWell(
-																	onTap: () { print('Pressed'); },
+																	onTap: () { 
+                                    Navigator.push(
+                                      context, 
+                                      MaterialPageRoute(builder: (context) => MainMenu(),)
+                                    );
+                                  },
 																	child: IntrinsicHeight(
 																		child: Container(
 																			decoration: BoxDecoration(
